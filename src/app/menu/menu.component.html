@@ -1,0 +1,64 @@
+<aside>
+  <div class="usuarioBox">
+    <figure>
+      <img src="assets/images/usuario.jpg" />
+    </figure>
+    <div class="datosUser">
+      <h2>Carlos Espinoza</h2>
+      <p>
+        <i class="status"></i>
+        <span>Online</span>
+      </p>
+    </div>
+  </div>
+  <h3>Menú de Navegación</h3>
+  <nav>
+    <ul>
+      <li>
+          <a [routerLink]="['/dashboard']"  [routerLinkActive]="['active']">
+            <div>
+              <i class="material-icons">dashboard</i>
+              <span>Dashboard</span>
+            </div>
+            <i class="material-icons">keyboard_arrow_left</i>
+          </a>
+      </li>
+      <!--li>
+          <a [routerLink]="['/user']"  [routerLinkActive]="['active']">
+              <div>
+                <i class="material-icons">people</i>
+                <span>Usuarios</span>
+              </div>
+              <i class="material-icons">keyboard_arrow_left</i>
+          </a>
+      </li-->
+      <li>
+        <a [routerLink]="['/ticket/add']"  [routerLinkActive]="['active']">
+            <div>
+              <i class="material-icons">wb_incandescent</i>
+              <span>Nuevo Ticket</span>
+            </div>
+            <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/tickets']"  [routerLinkActive]="['active']">
+            <div>
+              <i class="material-icons">wb_incandescent</i>
+              <span>Tickets</span>
+            </div>
+            <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+    </li>
+    <!--li>
+        <a [routerLink]="['/statistical-reports']"  [routerLinkActive]="['active']">
+            <div>
+              <i class="material-icons">pie_chart</i>
+              <span>Estadísticas</span>
+            </div>
+            <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+    </li-->
+    </ul>
+  </nav>
+</aside>

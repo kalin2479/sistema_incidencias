@@ -1,0 +1,156 @@
+header
+    background #ed2553
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content space-between
+    align-items stretch
+    box-sizing border-box
+    height 54px
+    padding 0 20px 0 60px
+    width 100%
+    position fixed
+    z-index 999
+    div
+        &:last-child
+            display flex
+            flex-direction row
+            flex-wrap nowrap
+            justify-content flex-end
+            align-items stretch
+            > div
+                > a
+                    position relative
+                    display block
+                    padding 19px 15px 15px 15px
+                    transition 0.5s all ease
+                    height 54px
+                    &.cerrarSession
+                        color white
+                        font-size 12px
+                        padding 18px 15px 12px
+                        i
+                        span
+                            display inline-block
+                            vertical-align middle
+                    &:hover
+                        background rgba(0,0,0,0.5)
+                        
+                    i
+                        color white
+                        font-size 18px
+                    .numBox
+                        position absolute
+                        top 5px 
+                        right 8px
+                        span
+                            color white
+                            background #f39c12
+                            padding 2px 3px
+                            font-size 9px
+                            line-height 0.9em
+                    ul
+                        position absolute
+                        top 40px
+                        right 0
+                        width 330px
+                        padding 0px 0 0px 0
+                        box-sizing border-box
+                        display none
+                        background white
+                        &.active
+                            display block
+
+                        li
+                            a
+                                display block
+                                padding 10px 10px 10px 15px
+                                border-bottom 1px solid rgba(0,0,0,.2)
+                                i
+                                    &.iconNoti
+                                        color #ed2553
+                                        font-size 14px
+                                        position relative
+                                        top 6px
+                                img
+                                > div
+                                    display inline-block
+                                    vertical-align top
+                                    margin-right 5px
+                                img
+                                    width 50px
+                                    border-radius 100%
+                                    height 50px
+                                div
+                                    padding-top 8px
+                                    &.infoBox
+                                        width 170px
+                                        &.width100
+                                            width 280px
+                                        h2
+                                        h3
+                                            font-family 'Open Sans'
+                                            text-align left
+                                            color #444444
+                                            font-size 14px
+                                            font-weight 600
+                                            margin 0
+                                            letter-spacing -.05em
+                                        h3
+                                            margin 0
+                                            text-overflow ellipsis
+                                            font-size 12px
+                                            font-weight 400
+                                            color #888888
+                                            white-space nowrap 
+                                            overflow hidden
+                                            width 100%
+                                        
+                                    &.timeBox
+                                        p
+                                            margin 0
+                                            text-overflow ellipsis
+                                            font-size 12px
+                                            font-weight 400
+                                            color #888888
+                                            i
+                                                color #ed2553
+                                                font-size 14px
+                                
+        &:first-child
+            display flex
+            flex-direction row
+            flex-wrap nowrap
+            justify-content flex-end
+            align-items center
+            a
+                &.menuBox
+                    display block
+                    width 35px
+                    margin-left 60px
+                    .line
+                        width 100%
+                        height 5px
+                        background white
+                        margin-bottom 4px
+                        &:last-child
+                            margin-bottom 0
+                p
+                    font-family 'Open Sans'
+                    text-align left
+                    color #fff
+                    font-size 22px
+                    font-weight 600
+                    margin 0
+                    i
+                    span
+                        display inline-block
+                        vertical-align middle
+                    i
+                        font-size 40px
+                        margin-right 6px
+                    span
+                        position relative
+                        top -3px
+                        font-weight 300
+

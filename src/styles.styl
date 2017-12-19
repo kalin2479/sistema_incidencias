@@ -1,0 +1,214 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto:300,300i,400,400i,500,700,700i,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+body
+    background #e9e9e9
+.headerTop
+    height 54px
+.MenuBox
+    position fixed
+    left 0
+    z-index 980
+    width 230px
+.cuerpoBox
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content flex-start
+    align-items stretch
+    padding-left 230px
+    .contenidoBox
+        padding 30px
+        flex-grow 1
+
+/*
+* Filtros Data Table
+*/
+.filtros
+    background white
+    border-bottom 1px solid rgba(0,0,0,.5)
+    border-radius 2px 2px 0 0
+    padding 20px 10px 20px 10px
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content space-between
+    align-items flex-start
+    margin-bottom 20px
+    box-shadow 0 1px 0 0 rgba(0,0,0,.15)
+    .filRow
+        width 40%
+.formInter
+.filtros
+    input[type="text"]
+        border 1px solid #e5e6e7
+        padding-left 15px
+        padding-right 30px
+        box-sizing border-box
+        width 100%
+        height 40px
+        margin 0
+        &::placeholder
+            color #2c2c2c
+        &:focus:not(.browser-default):not([readonly])
+            border 1px solid #e5e6e7
+            box-shadow 0 0 0 0 transparent
+    .blockSelect
+        background transparent
+        border-radius 0px
+        cursor pointer
+        margin-top 0px
+        padding 0px
+        border 1px solid #e5e6e7
+        height 40px
+        width 100%
+        position relative 
+        top 0 
+        left 0
+        z-index 1
+        ul
+            &.listSelect
+                background: none repeat scroll 0 0 #fff
+                border-bottom 1px solid #e5e6e7
+                border-left 1px solid #e5e6e7
+                border-right 1px solid #e5e6e7
+                display none
+                margin-left 0
+                margin-top 8px
+                margin-left 0px
+                padding-left 0
+                overflow hidden
+                position absolute 
+                top 0px left -1px
+                text-indent 15px
+                width 100%
+                li
+                    border-bottom 1px solid #efefef
+                    cursor pointer
+                    display block
+                    list-style outside none none
+                    margin 0
+                    padding 10px 20px
+                    width 100%
+                    a
+                        &:hover
+                            color #999797
+                            text-decoration none
+        .itemSelected
+            display block
+            padding 9px 0 0 15px
+            overflow hidden
+            width 95%
+            &.bold 
+                color #2c2c2c
+        .lowerTriangle
+        .upperTriangle 
+            position absolute 
+            top 0px 
+            right 0px
+            i
+                font-size 40px
+        .upperTriangle 
+            transform rotate(90deg)
+
+.paginacionBox
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content space-between
+    align-items flex-start
+    margin-top 20px
+    div
+        &:last-child
+            a
+                height 30px
+                color #444
+                //transition .5s all ease
+                margin-left 3px
+                margin-right 3px
+                i
+                    line-height 1.25em
+           
+            > a
+            > ul
+                display inline-block
+                vertical-align top
+                margin-right -4px
+            ul
+                margin-top 0
+                margin-bottom 0
+                margin-right 0px
+                li
+                    display inline-block
+                    vertical-align top
+                    margin-right -4px
+                    a
+                        display block
+                        padding-left 10px
+                        padding-right 10px
+                        line-height 2em
+                        border-right 0
+                        &.active 
+                        &:hover
+                            background #edaa44
+                            border-radius 5px
+                            color #fff
+    h3
+        font-size 14px
+        font-family "Open Sans"
+        font-weight 400
+        text-align center
+        margin 0
+        line-height 2.15em
+        span
+            font-weight 800
+table
+    &.bordered
+        thead
+            border-top 1px solid rgba(0,0,0,.5)
+            background #fff
+            tr
+                th
+                    font-size 12px
+                    font-family "Open Sans"
+                    font-weight 800
+                    text-align center
+        tbody
+            background #F5F5F6
+            tr
+                td
+                    font-size 12px
+                    font-family "Open Sans"
+                    font-weight 400
+                    &:first-child
+                        padding-left 20px
+                    &:nth-of-type(2)
+                    &:nth-of-type(3)
+                    &:nth-of-type(4)
+                    &:last-child
+                        text-align center
+                    a
+                        margin auto
+                        display block
+                        text-align center
+                        &.revisando
+                            color #EDAA44
+                        &.cancelar
+                            color red
+                        &.atendido
+                            color #008000
+                        &.sin-atender
+                            color #ff8c00
+                        &.revisando
+                        &.cancelar
+                        &.atendido
+                        &.sin-atender
+                            font-size 12px
+                            font-family "Open Sans"
+                            font-weight 400
+                        i
+                            color #1485CC

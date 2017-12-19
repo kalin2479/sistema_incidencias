@@ -1,0 +1,21 @@
+<!--div *ngIf="accessUser==false; then noAdmin else Admin"></div-->
+<div *ngIf="accessUser==false; else Admin">
+    <router-outlet></router-outlet>
+</div>
+<!--ng-temple #noAdmin>
+    <router-outlet></router-outlet>
+</ng-temple-->
+<ng-template #Admin>
+    <div class="headerTop">
+        <app-header></app-header>
+    </div>
+    <div class="cuerpoBox">
+        <div class="MenuBox">
+            <app-menu></app-menu>
+        </div>
+        <div class="contenidoBox container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</ng-template>
+

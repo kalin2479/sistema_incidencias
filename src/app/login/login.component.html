@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="loginBox">
+    <div class="group">
+      <h2>Sistema de Incidencias</h2>
+      <p> <i class="material-icons icoCopy">copyright</i> desarrollado por <span>Carlos Espinoza</span></p> 
+      <div class="cardBox">
+        <div class="circule">
+          <i class="material-icons iconLockOpen">lock_open</i>
+        </div>
+        <div class="card"></div>
+        <div class="card">
+          <h1>ACCESO</h1>
+          <form (submit) = "loginUser($event)">
+            <div class="rowForm" id="alertBox" style="display:none">
+              <div class="columnForm">
+                <p>Error de credenciales</p>                
+              </div>
+            </div>
+            <div class="rowForm">
+              <div class="columnForm">
+                <input type="text" name="usuario" id="usuario" required/>
+                <label for="usuario">Usuario</label>  
+                <div class="bar"></div>                  
+              </div>
+            </div>
+            <div class="rowForm">
+              <div class="columnForm">
+                <input type="password" name="password" id="password" required />
+                <label for="password">Contraseña</label>        
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="rowForm">
+                <div class="columnForm">
+                  <button type="submit"><span>Ingrresar</span></button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<form class="formInter">
+  <div class="rowForm" id="alertBox" style="display:none">
+    <div class="columnForm">
+      <p>Error de credenciales</p>                
+    </div>
+  </div>
+  <div class="rowForm">
+    <div class="columnForm">
+      <div id="selectEstado" class="blockSelect"><span class="itemSelected">Severidad</span>
+        <ul class="listSelect">
+          <li>Severidad</li>
+          <li>Alta</li>
+          <li>Media</li>
+          <li>Baja</li>
+        </ul><span class="lowerTriangle" ><i class="material-icons">arrow_drop_down</i></span>
+      </div>
+    </div>
+  </div>
+  <div class="rowForm">
+    <div class="columnForm">
+      <input type="text" name="tipoIncidencia" id="tipoIncidencia" required/>
+      <label for="usuario">Tipo de Inicidencia</label>  
+      <div class="bar"></div>                  
+    </div>
+  </div>
+  <div class="rowForm">
+    <div class="columnForm">
+      <textarea name="desripcion" id="desripcion" cols="30" rows="10" required></textarea>
+      <label for="usuario">Descripción</label>  
+      <div class="bar"></div>                  
+    </div>
+  </div>
+  <div class="rowForm">
+    <div class="columnForm">
+      <button type="submit"><span>Registrar incidencia</span></button>
+    </div>
+  </div>
+</form>

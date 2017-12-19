@@ -1,0 +1,184 @@
+.loginBox
+    .group
+        text-align center
+        .cardBox
+            width 100%
+            margin 30px auto 0
+            position relative
+            @media screen and (min-width: 600px)
+                width 460px
+            //@media screen and (min-width: 992px)
+            //@media screen and (min-width: 1200px)
+            .circule
+                position absolute
+                top 30px
+                right -53px
+                width 110px
+                height 110px
+                border-radius 100%
+                background #ed2553
+                z-index 2
+                .iconLockOpen
+                    font-size 62px
+                    margin-top 20px
+                    color white
+            .card
+                margin auto
+                h1
+                    margin 0  0 30px
+                    position relative
+                    font-family 'Open Sans'
+                    text-align left
+                    z-index 1
+                    border-left 5px solid #ed2553
+                    padding 10px 0 10px 50px
+                    color #ed2553
+                    font-size 22px
+                    font-weight 600
+                    text-transform uppercase
+                    @media screen and (min-width: 600px)
+                        font-size 32px
+                form
+                    margin 10px 50px
+                    .rowForm
+                        margin-bottom 40px
+                        .columnForm
+                            position relative
+                            button
+                                outline 0
+                                cursor pointer
+                                position relative
+                                display inline-block
+                                background 0
+                                width 240px
+                                border 2px solid #e3e3e3
+                                padding 15px 0
+                                font-family 'Open Sans'
+                                font-size 16px
+                                font-weight 600
+                                line-height 1
+                                text-transform uppercase
+                                overflow hidden
+                                transition .3s ease
+                                @media screen and (min-width: 600px)
+                                    font-size 24px
+                                    padding 20px 0
+                                &:hover
+                                &:focus
+                                    border-color #ed2553 
+                                    span
+                                        color #ed2553
+                                &:before
+                                    content ''
+                                    position absolute
+                                    top 50%
+                                    left 50%
+                                    display block
+                                    background #ed2553
+                                    width 30px
+                                    height 30px
+                                    border-radius 100%
+                                    margin -15px 0 0 -15px
+                                    opacity 0
+                                    transition .3s ease
+                                span
+                                    position relative
+                                    z-index 1
+                                    color #ddd
+                                    transition .3s ease
+                            .bar
+                                position absolute
+                                left 0
+                                bottom 0
+                                background #757575
+                                width 100%
+                                height 1px
+                                &:after
+                                &:before
+                                    content ''
+                                    position absolute
+                                    background #ed2553
+                                    width 0
+                                    height 2px
+                                    transition .2s ease
+                            label
+                                position absolute
+                                top -13px
+                                left 0
+                                color #757575
+                                font-family 'Open Sans'
+                                font-size 16px
+                                font-weight 300
+                                line-height 60px
+                                transition 0.2s ease
+                                @media screen and (min-width: 600px)
+                                    font-size 24px
+                                    top 0
+                            input[type="text"]
+                            input[type="password"]
+                                outline none
+                                z-index 1
+                                position relative
+                                background none
+                                width 100%
+                                height 30px
+                                border 0
+                                color #212121
+                                font-family 'Open Sans'
+                                font-size 24px
+                                font-weight 400
+                                margin 0
+                                @media screen and (min-width: 600px)
+                                    height 60px
+                                &:valid
+                                    ~ label
+                                        color: #9d9d9d;
+                                        transform: translate(-12%, -50%) scale(0.75);
+                                &:focus
+                                    border-bottom 0
+                                    box-shadow 0 0 0 0 transparent
+                                    ~ .bar
+                                        &:after
+                                            width 50%
+                                            left 50%
+                                        &:before
+                                            width 50%
+                                            right 50%
+                                    ~ label
+                                        color: #9d9d9d;
+                                        transform: translate(-12%, -50%) scale(0.75);
+                &:first-child
+                    height 10px
+                    border-radius 5px 5px 0px 0px
+                    background #fafafa
+                    width 95%
+                &:last-child
+                    background #fff
+                    border-radius 5px
+                    width 100%
+                    padding 30px 0 40px 0
+                    box-sizing border-box
+                    @media screen and (min-width: 600px)
+                        padding-top 60px
+        h2
+            font-family 'Open Sans'
+            font-size 26px
+            font-weight 300
+            margin 30px 0 0
+            @media screen and (min-width: 600px)
+                font-size 40px
+        p
+            font-family 'Open Sans'
+            font-size 12px
+            font-weight 400
+            margin 15px 0
+            span
+                font-weight 500                
+            span, .icoCopy
+                color #ed2553
+            .icoCopy
+                position relative 
+                top 3px 
+                left 0
+                font-size 13px
+    

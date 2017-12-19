@@ -1,0 +1,28 @@
+<div class="graficoContent">
+  <div class="graficoBox">
+    <div class="cabecera">
+      <h2>Resumen de Ticket <span>(está semana)</span></h2>
+    </div>
+    <canvas baseChart
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>
+  <!--div class="detailGrafico">
+    <table class="highlight">
+      <tr>
+        <th *ngFor="let label of lineChartLabels">{{label}}</th>
+      </tr>
+      <tr *ngFor="let d of lineChartData">
+        <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
+      </tr>
+    </table>
+    <button (click)="randomize()" class="waves-effect waves-light btn">CLICK</button>
+  </div-->
+</div>
